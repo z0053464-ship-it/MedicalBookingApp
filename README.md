@@ -72,7 +72,7 @@ Run the JSON Server
 
 In a terminal, run:
 
-npx json-server db.json --port 5000
+npx.cmd json-server --watch db.json --port 5000
 
 Run the React Application
 
