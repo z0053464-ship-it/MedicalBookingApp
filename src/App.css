@@ -1,0 +1,745 @@
+/* =========================================
+   MEDICAL BOOKING APP
+   Complete UI
+========================================= */
+
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --primary-light: #eff6ff;
+
+  --text: #172033;
+  --muted: #64748b;
+
+  --background: #f5f8fc;
+  --white: #ffffff;
+
+  --border: #e2e8f0;
+
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+
+  --shadow-sm: 0 4px 14px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 10px 30px rgba(15, 23, 42, 0.09);
+}
+
+
+/* =========================================
+   GLOBAL
+========================================= */
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text);
+
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  background: rgba(255, 255, 255, 0.96) !important;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(15, 23, 42, 0.05);
+  padding-top: 7px !important;
+  padding-bottom:1kpx !important;
+}
+
+.navbar-brand {
+  color: var(--primary) !important;
+
+  font-size: 1.35rem;
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+.navbar-brand:hover {
+  color: var(--primary-dark) !important;
+}
+
+.navbar .nav-link {
+  color: #475569 !important;
+
+  font-weight: 600;
+
+  padding: 8px 13px !important;
+
+  border-radius: 9px;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.navbar .nav-link:hover {
+  color: var(--primary) !important;
+  background: var(--primary-light);
+}
+
+.navbar .nav-link.active {
+  color: var(--primary) !important;
+  background: var(--primary-light);
+}
+
+
+/* =========================================
+   PAGE HEADINGS
+========================================= */
+.container {
+  padding-top: 0;
+  padding-bottom: 40px;
+}
+.container > h1 {
+  margin-top: 15px;
+
+  color: var(--text);
+
+  font-size: 2rem;
+  font-weight: 800;
+
+  letter-spacing: -0.7px;
+}
+
+.container > h1::after {
+  content: "";
+
+  display: block;
+
+  width: 45px;
+  height: 4px;
+
+  margin-top: 10px;
+
+  background: var(--primary);
+
+  border-radius: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text);
+}
+
+
+/* =========================================
+   ROW / COLUMNS
+========================================= */
+
+.row {
+  --bs-gutter-y: 1.5rem;
+}
+
+
+/* =========================================
+   ALL CARDS
+========================================= */
+
+.card {
+  background: var(--white);
+
+  border: 1px solid var(--border) !important;
+
+  border-radius: 16px !important;
+
+  box-shadow: var(--shadow-sm);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+
+  box-shadow: var(--shadow-md);
+
+  border-color: #d5deeb !important;
+}
+
+.card-header {
+  background: var(--white) !important;
+
+  border-bottom: 1px solid var(--border) !important;
+
+  padding: 16px 18px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+
+/* =========================================
+   DOCTOR CARDS
+========================================= */
+
+.card img {
+  display: block;
+
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.card-img-top {
+  height: 240px;
+
+  object-fit: cover;
+
+  transition: transform 0.35s ease;
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.025);
+}
+
+.card-title {
+  color: var(--text);
+
+  font-weight: 750;
+}
+
+.card-text {
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   DOCTOR DETAILS IMAGE
+========================================= */
+
+.doctor-details-image {
+  width: 100%;
+
+  min-height: 320px;
+  max-height: 500px;
+
+  object-fit: cover;
+
+  border-radius: 16px;
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+  border-radius: 9px !important;
+
+  font-weight: 650;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  background: var(--primary) !important;
+
+  border-color: var(--primary) !important;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark) !important;
+
+  border-color: var(--primary-dark) !important;
+
+  box-shadow:
+    0 6px 15px rgba(37, 99, 235, 0.2);
+}
+
+.btn-lg {
+  padding: 11px 20px;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+
+  border-color: #93c5fd;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary);
+
+  border-color: var(--primary);
+}
+
+.btn-outline-danger:hover {
+  box-shadow:
+    0 5px 12px rgba(220, 38, 38, 0.15);
+}
+
+
+/* =========================================
+   FORMS
+========================================= */
+
+.form-label {
+  color: var(--text);
+
+  margin-bottom: 7px;
+
+  font-size: 0.92rem;
+}
+
+.form-control,
+.form-select {
+  min-height: 43px;
+
+  border: 1px solid var(--border) !important;
+
+  border-radius: 9px !important;
+
+  background: var(--white);
+
+  color: var(--text);
+
+  box-shadow: none !important;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary) !important;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.1) !important;
+}
+
+.form-control::placeholder,
+.form-select::placeholder {
+  color: #94a3b8;
+}
+
+
+/* =========================================
+   SEARCH / FILTER AREA
+========================================= */
+
+input[type="search"],
+input[placeholder*="Search"],
+input[placeholder*="search"] {
+  background: var(--white);
+}
+
+
+/* =========================================
+   BADGES
+========================================= */
+
+.badge {
+  padding: 7px 10px;
+
+  border-radius: 7px;
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================================
+   APPOINTMENTS
+========================================= */
+
+.list-unstyled {
+  margin-bottom: 0;
+}
+
+.list-unstyled li {
+  color: #475569;
+
+  line-height: 1.55;
+}
+
+.list-unstyled .fw-semibold {
+  color: var(--text);
+}
+
+
+/* Appointment card spacing */
+
+.card-header h6 {
+  font-size: 0.95rem;
+
+  margin-bottom: 0;
+}
+
+
+/* =========================================
+   ALERTS
+========================================= */
+
+.alert {
+  border-radius: 12px !important;
+
+  border: 1px solid transparent;
+
+  padding: 13px 16px;
+
+  font-weight: 500;
+}
+
+.alert-success {
+  color: #166534;
+}
+
+.alert-danger {
+  color: #991b1b;
+}
+
+.alert-info {
+  color: #075985;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.spinner-border {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-page {
+  padding-bottom: 60px;
+}
+
+.profile-cover {
+  height: 165px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #1d4ed8 0%,
+      #2563eb 45%,
+      #60a5fa 100%
+    );
+
+  border-radius: 16px 16px 0 0;
+
+  position: relative;
+}
+
+.profile-cover::after {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -45px;
+  top: -65px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.profile-avatar {
+  width: 110px;
+  height: 110px;
+
+  margin-top: -55px;
+
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--white);
+
+  border: 5px solid var(--white);
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.16);
+
+  color: var(--primary);
+
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.profile-info {
+  padding: 0 25px 25px;
+}
+
+.profile-name {
+  margin-top: 12px;
+
+  margin-bottom: 5px;
+
+  font-size: 1.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: -0.4px;
+}
+
+.profile-subtitle {
+  color: var(--muted);
+
+  margin-bottom: 0;
+
+  line-height: 1.6;
+}
+
+.profile-stat {
+  height: 100%;
+
+  background: #f8fafc;
+
+  border: 1px solid var(--border);
+
+  border-radius: 12px;
+
+  padding: 15px;
+
+  text-align: center;
+}
+
+.profile-stat-number {
+  display: block;
+
+  color: var(--primary);
+
+  font-size: 1.05rem;
+
+  font-weight: 800;
+
+  margin-bottom: 3px;
+}
+
+.profile-stat-label {
+  color: var(--muted);
+
+  font-size: 0.82rem;
+}
+
+.profile-section {
+  border-top: 1px solid var(--border);
+
+  padding-top: 22px;
+
+  margin-top: 22px;
+}
+
+.profile-section-title {
+  margin-bottom: 17px;
+
+  font-size: 1.05rem;
+
+  font-weight: 750;
+}
+
+
+/* =========================================
+   PROFILE INPUTS
+========================================= */
+
+.profile-page .form-control {
+  min-height: 46px;
+}
+
+.profile-page .invalid-feedback {
+  font-weight: 500;
+}
+
+
+/* =========================================
+   404 PAGE
+========================================= */
+
+.container .display-1 {
+  color: var(--primary);
+
+  font-weight: 900;
+}
+
+.container .lead {
+  color: var(--muted);
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   HORIZONTAL SEPARATORS
+========================================= */
+
+.border-top {
+  border-color: var(--border) !important;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+
+/* =========================================
+   DOCTOR WORKING DAYS / SLOTS
+========================================= */
+
+ul li {
+  margin-bottom: 5px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .container > h1 {
+    font-size: 1.7rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+
+  .doctor-details-image {
+    min-height: 250px;
+  }
+
+  .profile-cover {
+    height: 135px;
+  }
+
+  .profile-avatar {
+    width: 95px;
+    height: 95px;
+
+    margin-top: -48px;
+
+    font-size: 1.7rem;
+  }
+
+  .profile-info {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 576px) {
+
+  .container {
+    padding-top: 5px;
+  }
+
+  .container > h1 {
+    font-size: 1.5rem;
+  }
+
+  .card-body {
+    padding: 16px;
+  }
+
+  .card-img-top {
+    height: 205px;
+  }
+
+  .btn {
+    font-size: 0.88rem;
+  }
+
+  .profile-name {
+    font-size: 1.35rem;
+  }
+
+  .profile-cover {
+    height: 120px;
+  }
+
+  .profile-avatar {
+    width: 88px;
+    height: 88px;
+
+    margin-top: -44px;
+
+    font-size: 1.5rem;
+  }
+}
+

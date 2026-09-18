@@ -1,0 +1,253 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Sarah Jenkins",
+      "specialty": "Cardiology",
+      "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=400",
+      "description": "Experienced cardiologist specializing in cardiovascular health, heart disease prevention, and hypertension management.",
+      "workingDays": [
+        "Monday",
+        "Wednesday",
+        "Friday"
+      ],
+      "availableSlots": [
+        "09:00 AM",
+        "10:00 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "03:30 PM"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Dr. Michael Chen",
+      "specialty": "Dermatology",
+      "image": "https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=400",
+      "description": "Board-certified dermatologist providing comprehensive skin treatments, acne management, and cosmetic dermatology.",
+      "workingDays": [
+        "Tuesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "availableSlots": [
+        "08:30 AM",
+        "10:00 AM",
+        "01:00 PM",
+        "02:30 PM",
+        "04:00 PM"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Dr. Emily Rodriguez",
+      "specialty": "Pediatrics",
+      "image": "https://images.unsplash.com/photo-1594824813572-c513f56b009e?auto=format&fit=crop&q=80&w=400",
+      "description": "Compassionate pediatrician dedicated to infant care, child health checkups, vaccination, and developmental wellness.",
+      "workingDays": [
+        "Monday",
+        "Tuesday",
+        "Thursday"
+      ],
+      "availableSlots": [
+        "09:30 AM",
+        "11:00 AM",
+        "01:30 PM",
+        "03:00 PM"
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Dr. James Wilson",
+      "specialty": "Neurology",
+      "image": "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80&w=400",
+      "description": "Specialist in neurological disorders, persistent migraines, stroke recovery, and comprehensive nerve care.",
+      "workingDays": [
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "availableSlots": [
+        "10:00 AM",
+        "11:30 AM",
+        "02:00 PM",
+        "04:00 PM"
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Dr. Olivia Taylor",
+      "specialty": "Orthopedics",
+      "image": "https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&fit=crop&q=80&w=400",
+      "description": "Orthopedic surgeon focusing on joint health, sports injuries, fracture rehabilitation, and mobility recovery.",
+      "workingDays": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday"
+      ],
+      "availableSlots": [
+        "08:00 AM",
+        "09:30 AM",
+        "11:00 AM",
+        "01:00 PM",
+        "03:00 PM"
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Dr. Robert Patel",
+      "specialty": "Dentistry",
+      "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&q=80&w=400",
+      "description": "General and cosmetic dentist providing oral surgery, smile design, routine checkups, and teeth whitening.",
+      "workingDays": [
+        "Monday",
+        "Wednesday",
+        "Thursday",
+        "Saturday"
+      ],
+      "availableSlots": [
+        "09:00 AM",
+        "10:30 AM",
+        "12:00 PM",
+        "02:30 PM",
+        "04:30 PM"
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2027-09-13",
+      "time": "02:30 PM",
+      "doctorId": "2",
+      "doctorName": "Dr. Michael Chen",
+      "note": "",
+      "status": "Pending",
+      "id": "Xqlczq6izjQ"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-12-08",
+      "time": "01:00 PM",
+      "doctorId": "2",
+      "doctorName": "Dr. Michael Chen",
+      "note": "ijyhg",
+      "status": "Pending",
+      "id": "VnHbgqGXdq8"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-12-06",
+      "time": "00:43",
+      "doctorId": "4",
+      "doctorName": "Dr. James Wilson",
+      "note": "",
+      "status": "Pending",
+      "id": "qDcrDT8hi6Y"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-09-24",
+      "time": "10:00 AM",
+      "doctorId": "4",
+      "doctorName": "Dr. James Wilson",
+      "note": "",
+      "status": "Pending",
+      "id": "_u1w3190hVE"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-12-11",
+      "time": "21:54",
+      "doctorId": "1",
+      "doctorName": "Dr. Sarah Jenkins",
+      "note": "",
+      "status": "Pending",
+      "id": "2iAgtqaBai8"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-12-11",
+      "time": "23:03",
+      "doctorId": "1",
+      "doctorName": "Dr. Sarah Jenkins",
+      "note": "",
+      "status": "Pending",
+      "id": "DgnwNRL4hSo"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-12-18",
+      "time": "10:00 AM",
+      "doctorId": "1",
+      "doctorName": "Dr. Sarah Jenkins",
+      "note": "",
+      "status": "Pending",
+      "id": "rVsJKL-D-iI"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-09-23",
+      "time": "10:00 AM",
+      "doctorId": "2",
+      "doctorName": "Dr. Michael Chen",
+      "note": "",
+      "status": "Pending",
+      "id": "B9rSULUKGlA"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-09-29",
+      "time": "01:30 PM",
+      "doctorId": "3",
+      "doctorName": "Dr. Emily Rodriguez",
+      "note": "",
+      "status": "Pending",
+      "id": "28mry6Hdtf8"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2027-09-07",
+      "time": "03:00 PM",
+      "doctorId": "3",
+      "doctorName": "Dr. Emily Rodriguez",
+      "note": "",
+      "status": "Pending",
+      "id": "dlNsJ443Pro"
+    },
+    {
+      "patientName": "Zainab Abdallah",
+      "email": "jhv@hjygfu.com",
+      "phone": "01087643865",
+      "date": "2026-09-18",
+      "time": "11:00 AM",
+      "doctorId": "5",
+      "doctorName": "Dr. Olivia Taylor",
+      "note": "",
+      "status": "Pending",
+      "id": "z92mXYExONc"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
